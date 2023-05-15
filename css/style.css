@@ -1,0 +1,84 @@
+html,
+body {height: 100%;}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#home-bg-video{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    position: fixed;  bottom: 0px;
+    width: 100%; height: 10vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex; align-items: center; justify-content: flex-end;
+}
+
+.menu .logo{ position: absolute; top: 3px; bottom: 0px; left: 10px;}
+
+.menu .logo img{ max-height: 90%; }
+
+.listOfMenuLinks {margin-right: 15px;}
+
+.listOfMenuLinks a{
+    color: #ffffff;
+    font-size: 32px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.listOfMenuLinks a:hover{color: darkgoldenrod; transform: scale(1.1); display: inline-block;}
+
+@media (max-width: 1150px) {
+    .listOfMenuLinks a{font-size: 20px;}
+}
+
+.listOfMenuLinks {display: none;}
+
+.menu .menu-icon {margin-right: 100px;}
+.menu .menu-icon .navicon {
+    background: darkgoldenrod;
+    display: block;
+    height: 5px;
+    width: 45px;
+    position: relative;
+}
+
+.menu .menu-icon .navicon:before,
+.menu .menu-icon .navicon:after{
+    content: "";
+    background: darkgoldenrod;
+    display: block;
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+}
+
+.menu .menu-icon .navicon:before {top: 15px}
+.menu .menu-icon .navicon:after {top: -15px}
+
+.menu .menu-btn:checked ~ .listOfMenuLinks {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    margin-right: 0;
+}
+
+.menu .menu-btn:checked ~ .listOfMenuLinks a {
+    display: block;
+    font-size: 60px;
+    line-height: 110px;
+}
