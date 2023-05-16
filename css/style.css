@@ -78,8 +78,8 @@ body {
 
 .menu .menu-btn:checked ~ .listOfMenuLinks a {
     display: block;
-    font-size: 40px;
-    line-height: 80px;
+    font-size: 30px;
+    line-height: 70px;
 }
 
 
@@ -115,7 +115,11 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .listOfMenuLinks{margin-right: 15px; visibility: visible;}
+    .menu .menu-btn,
+    .menu .menu-icon{display: none;}
+    .listOfMenuLinks {margin-right: 15px; visibility: visible;}
+    .menu .listOfMenuLinks a:hover {transform: scale(1.1);}
+    .listOfMenuLinks a{font-size: 20px;}
 }
 
 /* *********************/
