@@ -78,7 +78,7 @@ body {
 
 .menu .menu-btn:checked ~ .listOfMenuLinks a {
     display: block;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 80px;
 }
 
