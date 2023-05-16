@@ -55,7 +55,9 @@ body {
     height: 100%;
     position: absolute;
     transition: all 0.5s ease-out;
+    
 }
+
 
 .menu .menu-icon .navicon:before {top: 15px}
 .menu .menu-icon .navicon:after {top: -15px}
@@ -88,6 +90,7 @@ body {
 }
 .menu .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg); top: 0;
+    
 }
 
 
@@ -122,7 +125,6 @@ body {
 .homepage-box {
     font-size: 20px;
     position: fixed;
-    z-index: 9;
     color: #ffffff;
     width: 40%;
     background:rgba(0,0,0,0.5) ;
@@ -133,4 +135,5 @@ body {
     letter-spacing: 2px;
     right: 10%;
     top: 100px;
+    
 }
